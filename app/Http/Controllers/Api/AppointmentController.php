@@ -321,8 +321,6 @@ class AppointmentController extends Controller
             })
             ->find($id);
 
-        // dd($appointment);
-
         if (!$appointment) {
             return response()->json(['message' => 'No record found'], 404);
         }
